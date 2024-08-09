@@ -7,7 +7,7 @@ ARG USER_GID=$USER_UID
 RUN apt update -y && apt upgrade -y && \
     apt install -y make wget curl ssh neovim build-essential cmake libffi-dev \
     libssl-dev zlib1g-dev libbz2-dev libreadline-dev libffi-dev libsqlite3-dev libgdbm-dev libncursesw5-dev liblzma-dev \
-    python3-dev python3-pip python3-venv 
+    python3-dev python3-pip python3-venv git
 
 RUN apt install -y sudo openssh-server && apt clean && mkdir /var/run/sshd
 
